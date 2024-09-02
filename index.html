@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container" id="landing-page">
+        <h1>Welcome to the Career Guidance Portal</h1>
+        <p>Find the best career options tailored for you!</p>
+        <form id="student-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="class">Select Class:</label>
+            <select id="class" required>
+                <option value="" disabled selected>Select your class</option>
+                <option value="10">Class 10</option>
+                <option value="11">Class 11</option>
+                <option value="12">Class 12</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="container" id="stream-selection" style="display: none;">
+        <h2>Choose Your Stream</h2>
+        <div id="stream-list">
+            <button class="stream-btn" data-stream="science">Science</button>
+            <button class="stream-btn" data-stream="commerce">Commerce</button>
+            <button class="stream-btn" data-stream="arts">Arts</button>
+        </div>
+        
+        <button id="back-button1">Go Back</button>
+    </div>
+
+    <div class="career-container" id="career-options" style="display: none;">
+        <h2>Career Options</h2>
+        <div id="career-list"></div>
+        <button id="back-button2">Go Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
