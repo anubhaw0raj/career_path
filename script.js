@@ -228,9 +228,9 @@ function displayCareerOptions(stream, name) {
         // Add link button
         const linkButton = document.createElement('a');
         if (career.title === "Software Engineering") {
-            linkButton.href = "/software.html";
+            linkButton.href = "./software.html";
         } else if (career.title === "Chartered Accountancy") {
-            linkButton.href = "/ca.html";
+            linkButton.href = "./ca.html";
         } else {
             linkButton.href = career.url;
             linkButton.target = "_blank";
