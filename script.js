@@ -2,7 +2,7 @@
 const careerData = {
     science: [
         {
-            title: "Software Engineering",
+            title: "Software Engineer",
             pros: [
                 "High demand and lucrative salaries",
                 "Opportunities for creativity and innovation",
@@ -177,7 +177,7 @@ const careerData = {
 };
 
 // Handle form submission
-document.getElementById('student-form').addEventListener('submit', function(event) {
+document.getElementById('student-form').addEventListener('submit', function (event) {
     event.preventDefault();
     const studentName = document.getElementById('name').value;
     const studentClass = document.getElementById('class').value;
@@ -192,7 +192,7 @@ document.getElementById('student-form').addEventListener('submit', function(even
 
 // Handle stream selection
 document.querySelectorAll('.stream-btn').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         const selectedStream = this.getAttribute('data-stream');
         const studentName = document.getElementById('name').value;
         displayCareerOptions(selectedStream, studentName);
@@ -256,7 +256,7 @@ function displayCareerOptions(stream, name) {
 }
 
 // Handle back button
-document.getElementById('back-button2').addEventListener('click', function() {
+document.getElementById('back-button2').addEventListener('click', function () {
     document.getElementById('career-options').style.display = 'none';
     const studentClass = document.getElementById('class').value;
     if (studentClass === '10') {
@@ -266,7 +266,7 @@ document.getElementById('back-button2').addEventListener('click', function() {
     }
 });
 
-document.getElementById('back-button1').addEventListener('click', function() {
+document.getElementById('back-button1').addEventListener('click', function () {
     document.getElementById('stream-selection').style.display = 'none';
     document.getElementById('landing-page').style.display = 'block';
 });
